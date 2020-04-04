@@ -3,9 +3,6 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 
-@Injectable({
-  providedIn: "root",
-})
 export enum SearchType {
   all = "",
   movie = "movie",
@@ -13,6 +10,9 @@ export enum SearchType {
   episode = "episode",
 }
 
+@Injectable({
+  providedIn: "root",
+})
 export class MovieService {
   url = "http://www.omdbapi.com/";
   apiKey = "a4b08741";

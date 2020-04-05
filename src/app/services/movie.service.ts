@@ -14,7 +14,7 @@ export enum SearchType {
   providedIn: "root",
 })
 export class MovieService {
-  url = "http://www.omdbapi.com/";
+  url = "https://www.omdbapi.com/";
   apiKey = "a4b08741";
 
   constructor(private http: HttpClient) {}

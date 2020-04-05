@@ -19,6 +19,12 @@ export class MovieService {
 
   constructor(private http: HttpClient) {}
 
+  /**
+   * Observable below is the return type of the searchData function, this is typescript
+   * @param title
+   * @param type
+   */
+
   searchData(title: string, type: SearchType): Observable<any> {
     let api = `${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${
       this.apiKey

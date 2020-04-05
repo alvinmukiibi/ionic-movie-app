@@ -12,8 +12,6 @@
 
   <ion-item>
     <ion-label>Filter</ion-label>
-
-    <!-- <ion-label>Pizza</ion-label> -->
     <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
       <ion-select-option value="">All</ion-select-option>
       <ion-select-option value="movie">Movie</ion-select-option>
@@ -26,7 +24,7 @@
     <ion-item
       button
       *ngFor="let item of (results | async)"
-      [routerLink]="['/', 'movies', item.imdbID]"
+      [routerLink]="['/movies', item.imdbID]"
     >
       <ion-avatar slot="start">
         <img [src]="item.Poster" *ngIf="item.Poster != 'N/A'" />

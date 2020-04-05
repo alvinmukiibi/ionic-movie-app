@@ -1,0 +1,8 @@
+- Pull in the code from github
+- npm install
+- ionic cordova prepare android
+- TO RUN ON ANDROID 
+- connect android device, enable USB debugging
+- ionic cordova run android
+
+A.Mukiibi, Data Scientist | Software Developer | Thinker | 5th April, 2020 A.D
